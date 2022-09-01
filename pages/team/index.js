@@ -2,9 +2,9 @@ import Image from 'next/image'
 
 export default function Team() {
     return (
-        <>
-            <div className="h-screen w-full">
-                <div className='h-screen flex flex-col items-center justify-center'>
+        <div className='h-[calc(100vh-80px)]'>
+            <div className="h-full w-full">
+                <div className='h-full flex flex-col items-center justify-center'>
                     <div className='w-full'>
                         <div className="w-[50%] mx-auto">
                             <Image src="/imgs/leading.png" alt="team leading image" layout="responsive" objectFit="contain" width="100%" height="17%" />
@@ -28,6 +28,6 @@ export default function Team() {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     )
 } 

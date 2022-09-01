@@ -6,7 +6,6 @@ import {AiOutlineMenu, AiOutlineClose, AiOutlineTwitter} from 'react-icons/ai'
 import {FaTelegramPlane} from 'react-icons/fa'
 
 const Header = (props) => {
-    const [isOpen, setIsOpen] = useState(false)
     const [nav, setNav] = useState(false)
 
     const handleNav = () => {
@@ -23,9 +22,13 @@ const Header = (props) => {
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
             </Head>
 
-            <nav className="fixed w-full lg:w-[91%] h-20 z-10">
+            <nav className="fixed w-full lg:w-[91%] h-20 z-10 mx-auto">
                 <div className='w-full h-full flex justify-between items-center px-2 2xl:px-16'>
-                    <Image src="/imgs/logo.png" alt="hungry hungry hippos logo" width="100%" height="50%" />
+                    <Link href="/">
+                        <a rel="noopener noreferrer">
+                            <Image src="/imgs/logo.png" alt="hungry hungry hippos logo" width="100%" height="50%" />
+                        </a>
+                    </Link>
                 
                     <div>
                         <ul className='hidden md:flex'>
