@@ -42,28 +42,48 @@
   }
 
   @font-face{
-    font-family: 'Snacker';
+    font-family: 'Comic';
     font-display: swap;
     font-style: normal;
-    src: url('/fonts/Snacker/snacker.ttf') format('truetype'), url('/fonts/Snacker/snacker.woff2') format('woff2');
-    font-weight: 400;
-    font-style: normal;
+    src: url('/fonts/Comic/comicz.ttf') format('truetype'), url('/fonts/Comic/comicz.woff2') format('woff2');
+    font-weight:900;
+    font-style: italic;
   }
 
+
   @font-face{
-    font-family: 'Young';
+    font-family: 'Wicked-Mouse';
     font-display: swap;
     font-style: normal;
-    src: url('/fonts/Young/young.ttf') format('truetype'), url('/fonts/Young/young.woff2') format('woff2');
+    src: url('/fonts/WickedMouse/wicked-mouse.ttf') format('truetype'), url('/fonts/WickedMouse/wicked-mouse.woff2') format('woff2');
     font-weight: 400;
     font-style: normal;
   }
 
   .font-outline{
-    font-family: 'Comic', cursive, sans-serif;
+    font-family: 'Wicked-Mouse', cursive, sans-serif;
     font-weight:700;
     color: white;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
   }
+
+  .font-fill{
+    font-family: 'Wicked-Mouse', cursive, sans-serif;
+    font-weight:700;
+    color: black;
+  }
+
+  .font-comic{
+    font-family: 'Comic', cursive, sans-serif;
+    font-weight:900;
+    color: black;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+  }
+  
+  /* .capitalize-first::first-letter {
+    @apply text:4xl;
+    text-transform: uppercase;
+  } */
 }
