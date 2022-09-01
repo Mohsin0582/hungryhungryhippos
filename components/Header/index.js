@@ -25,7 +25,7 @@ const Header = (props) => {
 
             <nav className="fixed w-full lg:w-[91%] h-20 z-10">
                 <div className='w-full h-full flex justify-between items-center px-2 2xl:px-16'>
-                    <Image src="/../public/imgs/logo.png" alt="hungry hungry hippos logo" width="100%" height="50%" />
+                    <Image src="/imgs/logo.png" alt="hungry hungry hippos logo" width="100%" height="50%" />
                 
                     <div>
                         <ul className='hidden md:flex'>
