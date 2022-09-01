@@ -42,7 +42,7 @@ export default function Home() {
         </div>
         <div className="col-span-0 sm:col-span-1 md:col-span-2 lg:col-span-2">
           <div className="h-full flex flex-col justify-center">
-            <Image src="/../public/imgs/hippos-ink.png" alt="home image" layout="responsive" objectFit="contain" width="100%" height="80%" />
+            <Image src="/imgs/hippos-ink.png" alt="home image" layout="responsive" objectFit="contain" width="100%" height="80%" />
           </div>
         </div> 
       </div>
