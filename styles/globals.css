@@ -27,6 +27,15 @@
     font-family: 'Comic';
     font-display: swap;
     font-style: normal;
+    src: url('/fonts/Comic/comicz.ttf') format('truetype'), url('/fonts/Comic/comicz.woff2') format('woff2');
+    font-weight:600;
+    font-style: italic;
+  }
+
+  @font-face{
+    font-family: 'Comic';
+    font-display: swap;
+    font-style: normal;
     src: url('/fonts/Comic/comicbd.ttf') format('truetype'), url('/fonts/Comic/comicbd.woff2') format('woff2');
     font-weight:700;
     font-style: normal;
@@ -41,15 +50,6 @@
     font-style: italic;
   }
 
-  @font-face{
-    font-family: 'Comic';
-    font-display: swap;
-    font-style: normal;
-    src: url('/fonts/Comic/comicz.ttf') format('truetype'), url('/fonts/Comic/comicz.woff2') format('woff2');
-    font-weight:900;
-    font-style: italic;
-  }
-
 
   @font-face{
     font-family: 'Wicked-Mouse';
@@ -60,30 +60,36 @@
     font-style: normal;
   }
 
-  .font-outline{
+  .font-wicked-outline{
     font-family: 'Wicked-Mouse', cursive, sans-serif;
     font-weight:700;
-    color: white;
+    @apply text-white;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
   }
 
-  .font-fill{
+  .font-wicked-fill{
     font-family: 'Wicked-Mouse', cursive, sans-serif;
     font-weight:700;
-    color: black;
+    @apply text-black;
   }
 
-  .font-comic{
+  .font-comic-regular-fill{
     font-family: 'Comic', cursive, sans-serif;
-    font-weight:900;
-    color: black;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
+    font-weight:400;
+    @apply text-black;
+  }
+
+  .font-comic-bold-fill{
+    font-family: 'Comic', cursive, sans-serif;
+    font-weight:700;
+    @apply text-black;
   }
   
-  /* .capitalize-first::first-letter {
-    @apply text:4xl;
-    text-transform: uppercase;
-  } */
+  html {
+    @apply scroll-smooth;
+  }
+  html, body{
+    @apply overflow-x-hidden;
+  }
 }

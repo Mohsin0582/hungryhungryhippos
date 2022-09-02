@@ -26,28 +26,28 @@ const Header = (props) => {
                 <div className='w-full h-full flex justify-between items-center px-2 2xl:px-16'>
                     <Link href="/">
                         <a rel="noopener noreferrer">
-                            <Image src="/imgs/logo.png" alt="hungry hungry hippos logo" width="100%" height="50%" />
+                            <Image src="/imgs/logos/logo.png" alt="hungry hungry hippos logo" width="100%" height="50%" />
                         </a>
                     </Link>
                 
                     <div>
                         <ul className='hidden md:flex'>
-                            <Link href="/about">
+                            <Link href="#about">
                                 <a rel="noopener noreferrer" className='ml-10 text-sm uppercase first-letter:text-2xl'>About</a>
                             </Link>
-                            <Link href="/tokenomics">
+                            <Link href="#tokenomics">
                                 <a rel="noopener noreferrer" className='ml-10 text-sm uppercase first-letter:text-2xl'>Tokenomics</a>
                             </Link>
-                            <Link href="/team">
+                            <Link href="#team">
                                 <a rel="noopener noreferrer" className='ml-10 text-sm uppercase first-letter:text-2xl'>Team</a>
                             </Link>
-                            <Link href="/litepaper">
+                            <Link href="#litepaper">
                                 <a rel="noopener noreferrer" className='ml-10 text-sm uppercase first-letter:text-2xl'>Litepaper</a>
                             </Link>
-                            <Link href="/links">
+                            <Link href="">
                                 <a rel="noopener noreferrer" className='ml-10 text-sm uppercase first-letter:text-2xl'>Links</a>
                             </Link>
-                            <Link href="/buy">
+                            <Link href="">
                                 <a rel="noopener noreferrer" className='ml-10 text-sm uppercase first-letter:text-2xl'>Buy Now</a>
                             </Link>
                         </ul>
@@ -71,33 +71,33 @@ const Header = (props) => {
                 >
                     <div>
                         <div className='w-full flex justify-between items-center'>
-                            <Image src="/../public/imgs/logo.png" alt="hungry hungry hippos mobile logo" width="87" height="35" />
+                            <Image src="/imgs/logos/logo.png" alt="hungry hungry hippos mobile logo" width="87" height="35" />
                             <div onClick={handleNav} className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer'>
                                 <AiOutlineClose/>
                             </div>
                         </div>
                         <div className='py-4'>
                             <ul className='uppercase flex flex-col'>
-                                <Link href="/about">
+                                <Link href="#about">
                                     <a rel="noopener noreferrer" className='py-4 text-sm first-letter:text-lg'>About</a>
                                 </Link>
-                                <Link href="/tokenomics">
+                                <Link href="#tokenomics">
                                     <a rel="noopener noreferrer" className='py-4 text-sm first-letter:text-lg'>Tokenomics</a>
                                 </Link>
-                                <Link href="/team">
+                                <Link href="#team">
                                     <a rel="noopener noreferrer" className='py-4 text-sm first-letter:text-lg'>Team</a>
                                 </Link>
-                                <Link href="/litepaper">
+                                <Link href="#litepaper">
                                     <a rel="noopener noreferrer" className='py-4 text-sm first-letter:text-lg'>Litepaper</a>
                                 </Link>
-                                <Link href="/links">
+                                <Link href="">
                                     <a rel="noopener noreferrer" className='py-4 text-sm first-letter:text-lg'>Links</a>
                                 </Link>
-                                <Link href="/buy">
+                                <Link href="">
                                     <a rel="noopener noreferrer" className='py-4 text-sm first-letter:text-lg'>Buy Now</a>
                                 </Link>
                             </ul>
-                            <div className='pt-40'>
+                            {/* <div className='pt-40'>
                                 <p className='uppercase tracking-widest text-[#5651e5]'>Let's Connect</p>
                                 <div className='flex items-center my-4 w-full sm:w-[80%]'>
                                     <div className='mr-[1rem] rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
@@ -107,7 +107,7 @@ const Header = (props) => {
                                         <FaTelegramPlane/>
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>
