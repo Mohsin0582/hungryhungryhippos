@@ -87,9 +87,56 @@
   }
   
   html {
-    @apply scroll-smooth;
+    @apply scroll-smooth
   }
   html, body{
-    @apply overflow-x-hidden;
+    @apply overflow-x-hidden
+  }
+
+  /* Main Nav */
+  .main-nav{
+    @apply ml-10 text-sm uppercase first-letter:text-2xl hover:text-orange-600
+  }
+
+   /* Hero Section */
+  .hero-links{
+    @apply pt-10 flex flex-col items-center justify-center md:flex-row mb-5 md:mb-0
+  }
+
+  .comic-button{
+    @apply w-[230px] border-2 border-black px-5 py-2 text-center md:mr-4 z-[60] relative hover:bg-orange-400 hover:text-white hover:border-orange-600
+  }
+  .comic-button span{
+    @apply inline-block uppercase text-sm first-letter:text-lg
+  }
+  .comic-button span:not(:last-child){
+    @apply mr-1
+  }
+
+  /* badges */
+  .badges-wrapper{
+    @apply grid-cols-4 grid sm:grid-cols-4 md:grid-cols-8 md:gap-4 px-2 sm:px-4 
+  }
+
+  .badges-item{
+    @apply col-span-1 py-2 sm:py-5 md:py-0
+  }
+
+
+  /* footer */
+  .footer-wrapper{
+    @apply bg-[#0c0a18]
+  }
+
+  .footer-grid{
+    @apply w-full sm:w-[60%] md:w-[40%] mx-auto grid grid-cols-6 
+  }
+
+  .footer-item{
+    @apply md:col-span-1 flex justify-center items-center text-white py-10
+  }
+
+  .link-with-icon{
+    @apply rounded-full bg-gray-600 lg:hover:bg-gray-500 h-12 w-12 flex items-center justify-center lg:hover:scale-125 ease-in duration-100
   }
 }

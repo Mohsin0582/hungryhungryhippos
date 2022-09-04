@@ -1,19 +1,13 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import About from '../components/About'
 import Tokenomics from '../components/Tokenomics'
 import Team from '../components/Team'
-import Faq from '../components/Faq'
 import Badge from '../components/Badge'
 
 export default function Home() {
-  const data = `Lorem ipsum dolor sit amet, consectetur 
-                adipiscing elit, sed do eiusmod tempor 
-                incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud 
-                exercitation ullamco laboris nisi ut aliquip 
-                ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum 
-                dolore eu fugiat nulla pariatur.`
+  const data = `Hungry Hungry Hippos will conduct a fair launch in which 80&#65285; of pre-raised funds will
+  be locked in a secure ETH liquidity pool for 12 months, earning a minimum target of 50&#65285; APR.`
 
   return (
     <>
@@ -23,6 +17,22 @@ export default function Home() {
             <div className="col-span-0 sm:col-span-1 md:col-span-2 lg:col-span-1 flex flex-col justify-center items-center">
               <div className="w-[95%] sm:w-[80%] mx-auto">
                 <h2 className='uppercase font-wicked-fill flex justify-center items-center text-center text-[16px] sm:text-xl' dangerouslySetInnerHTML={{__html: data}} />
+                <div className='hero-links'>
+                  <Link href="https://www.pinksale.finance/launchpad/0xc620f2598f2F818faa20D3ffE8104ccf5A263e9f?chain=BSC">
+                      <a title="Presale" target="_blank" rel="noopener noreferrer" className='comic-button mb-5 md:mb-0'>
+                        <span>Link to</span>
+                        <span>Presale</span>
+                        <span>Button</span>
+                      </a>
+                  </Link>
+                  <Link href="https://t.me/HHHofficial">
+                      <a title="Telegram" target="_blank" rel="noopener noreferrer" className='comic-button'>
+                        <span>Link to</span>
+                        <span>Telegram</span>
+                        <span>Group</span>
+                      </a>
+                  </Link>
+                </div>
               </div>
             </div>
             <div className="col-span-0 sm:col-span-1 md:col-span-2 lg:col-span-1">
@@ -38,17 +48,14 @@ export default function Home() {
           <About/>
         </div>
       </div>
-      <div className='tokenomics-section pt-10' id="tokenomics">
+      <div className='tokenomics-section py-10' id="tokenomics">
           <Tokenomics/>
           <div className='team-section pt-6' id="team">
             <Team/>
           </div>
       </div>
-      <div className='faq-section pt-10' id="faq">
-        <Faq/>
-      </div>
-      <hr className='h-4 pt-2 border-[#243c5a]'/>
-      <div className='badge-section' id="badge">
+      <hr className='border-[#243c5a]'/>
+      <div className='py-2 badge-section' id="badge">
         <Badge/>
       </div>
     </>

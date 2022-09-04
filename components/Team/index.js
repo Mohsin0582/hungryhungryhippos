@@ -1,14 +1,20 @@
 import Image from 'next/image'
 
 export default function Team() {
-    const data = `Lorem ipsum dolor sit amet, consectetur 
-    adipiscing elit, sed do eiusmod tempor 
-    incididunt ut labore et dolore magna aliqua. 
-    Ut enim ad minim veniam, quis nostrud 
-    exercitation ullamco laboris nisi ut aliquip 
-    ex ea commodo consequat. Duis aute irure dolor
-    in reprehenderit in voluptate velit esse cillum 
-    dolore eu fugiat nulla pariatur.`
+    const data = `The Hungry Hungry  Hippos Core Team consists of four 
+    individuals who collectively hold an uncanny and 
+    multifaceted amount of experience  and TRUST in the space . 
+    <br/>
+    <br/>
+    With their combined skills , they are determined to showcase talents ranging from solidity developement, financial
+    analytics & trading , marketing etc ...
+    in a never before seen , and REVOLTUTIONARY way. 
+     <br/>
+     <br/>
+    Although each member of  The Hungry Core Team is KYC’d,
+    at INCEPTION , they intend to remain anonymous. 
+    The team believes this will increase intrigue, speculation,
+    and overall excitement about the project.`
 
     return (
         <>

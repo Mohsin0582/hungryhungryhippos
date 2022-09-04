@@ -3,7 +3,6 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
 import {AiOutlineMenu, AiOutlineClose, AiOutlineTwitter} from 'react-icons/ai'
-import {FaTelegramPlane} from 'react-icons/fa'
 
 const Header = (props) => {
     const [nav, setNav] = useState(false)
@@ -22,7 +21,7 @@ const Header = (props) => {
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
             </Head>
 
-            <nav className="fixed w-full lg:w-[91%] h-20 z-10 mx-auto">
+            <nav className="fixed w-full lg:w-10/12 h-20 z-10 mx-auto">
                 <div className='w-full h-full flex justify-between items-center px-2 2xl:px-16'>
                     <Link href="/">
                         <a rel="noopener noreferrer">
@@ -33,22 +32,22 @@ const Header = (props) => {
                     <div>
                         <ul className='hidden md:flex'>
                             <Link href="#about">
-                                <a rel="noopener noreferrer" className='ml-10 text-sm uppercase first-letter:text-2xl'>About</a>
+                                <a rel="noopener noreferrer" className='main-nav'>About</a>
                             </Link>
                             <Link href="#tokenomics">
-                                <a rel="noopener noreferrer" className='ml-10 text-sm uppercase first-letter:text-2xl'>Tokenomics</a>
+                                <a rel="noopener noreferrer" className='main-nav'>Tokenomics</a>
                             </Link>
                             <Link href="#team">
-                                <a rel="noopener noreferrer" className='ml-10 text-sm uppercase first-letter:text-2xl'>Team</a>
+                                <a rel="noopener noreferrer" className='main-nav'>Team</a>
                             </Link>
-                            <Link href="#litepaper">
-                                <a rel="noopener noreferrer" className='ml-10 text-sm uppercase first-letter:text-2xl'>Litepaper</a>
-                            </Link>
-                            <Link href="">
-                                <a rel="noopener noreferrer" className='ml-10 text-sm uppercase first-letter:text-2xl'>Links</a>
+                            <Link href="/litepaper">
+                                <a rel="noopener noreferrer" className='main-nav'>Litepaper</a>
                             </Link>
                             <Link href="">
-                                <a rel="noopener noreferrer" className='ml-10 text-sm uppercase first-letter:text-2xl'>Buy Now</a>
+                                <a rel="noopener noreferrer" className='main-nav'>Links</a>
+                            </Link>
+                            <Link href="https://pancakeswap.finance/swap?inputCurrency=0x921B1A01d3b9FcaD71C2BBf95FDA751844cdC139">
+                                <a rel="noopener noreferrer" className='main-nav'>Buy Now</a>
                             </Link>
                         </ul>
 
@@ -87,27 +86,16 @@ const Header = (props) => {
                                 <Link href="#team">
                                     <a rel="noopener noreferrer" className='py-4 text-sm first-letter:text-lg'>Team</a>
                                 </Link>
-                                <Link href="#litepaper">
+                                <Link href="/litepaper">
                                     <a rel="noopener noreferrer" className='py-4 text-sm first-letter:text-lg'>Litepaper</a>
                                 </Link>
                                 <Link href="">
                                     <a rel="noopener noreferrer" className='py-4 text-sm first-letter:text-lg'>Links</a>
                                 </Link>
-                                <Link href="">
+                                <Link href="https://pancakeswap.finance/swap?inputCurrency=0x921B1A01d3b9FcaD71C2BBf95FDA751844cdC139">
                                     <a rel="noopener noreferrer" className='py-4 text-sm first-letter:text-lg'>Buy Now</a>
                                 </Link>
                             </ul>
-                            {/* <div className='pt-40'>
-                                <p className='uppercase tracking-widest text-[#5651e5]'>Let's Connect</p>
-                                <div className='flex items-center my-4 w-full sm:w-[80%]'>
-                                    <div className='mr-[1rem] rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                                        <AiOutlineTwitter/>
-                                    </div>
-                                    <div className='mr-[1rem] rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                                        <FaTelegramPlane/>
-                                    </div>
-                                </div>
-                            </div> */}
                         </div>
                     </div>
                 </div>
